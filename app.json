@@ -1,0 +1,62 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/sign_up/sign_up",
+    
+    "pages/class-category/class-category",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/recipe/recipe",
+    "pages/appointment/appointment",
+    "pages/column-detail/column-detail",
+    "pages/schedule/schedule",
+    "pages/headline/headline",
+    "pages/discount-ticket2/discount-ticket2",
+    "pages/teacher_detail/teacher_detail",
+    "pages/teacher_mien/teacher_mien",
+    "pages/clockin/clockin",
+    "pages/column/column",
+    "pages/contact/contact",
+    "pages/multi_school/multi_school",
+    "pages/news_list/news_list",
+    
+    "pages/receive_ticket/receive_ticket"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText":"地森外语",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#666",
+    "selectedColor":"#2fd8ad",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"images/home (1).png",
+      "selectedIconPath":"images/home.png"
+      },
+      {
+        "pagePath": "pages/sign_up/sign_up",
+        "text": "在线报名",
+        "iconPath": "images/course_join.png",
+        "selectedIconPath": "images/course_join_active.png"
+      },
+      {
+        "pagePath": "pages/teacher_mien/teacher_mien",
+        "text": "师资团队",
+        "iconPath": "images/phone (1).png",
+        "selectedIconPath": "images/teacher_active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/me (1).png",
+        "selectedIconPath": "images/me.png"
+      }
+      
+    ]
+  }
+}
