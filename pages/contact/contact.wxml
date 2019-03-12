@@ -1,0 +1,26 @@
+<!--pages/contact/contact.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class='top'>
+  <image src='{{school.school_thumb}}'></image>
+  <text>学校简介</text>
+</view>
+
+<view class='instruct'>
+    <view class="wxParse" style="padding:15px;margin:0 auto;text-align:center;over-flow:hidden;">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <view class='list'>
+      <view class='item' bindtap="make_phone">
+        <image src='../../images/phone-page.png' mode=''></image>
+        <text>{{school.mobile}}</text>
+      </view>
+      <view class='item' bindtap="open_location">
+        <image src='../../images/location.png'></image>
+        <text>{{school.address}}</text>
+      </view>
+    </view>
+
+    <map id="map" longitude="{{school.longitude}}" latitude="{{school.latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" circles="{{circles}}" bindregionchange="regionchange" show-location style="width: 100%; height: 350rpx;margin:40rpx 0;">
+    </map>
+</view>

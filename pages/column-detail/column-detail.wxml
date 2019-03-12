@@ -1,0 +1,19 @@
+<!--pages/column/column.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='container'>
+    <!-- <view class='top-title'>
+      <text decode='true'>{{title}}</text>
+    </view> -->
+    <!-- <view class='browse'>
+      <text>26651浏览</text>
+      <text>764赞</text>
+    </view>
+
+    <view class='image'>
+      <image src='../../images/teacher.jpg'></image>
+      <text>Anna老师（励步英语）</text>
+    </view> -->
+    <view style="padding:15px;">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+<view class='container'>
+
+  <view class='top'>
+
+    <view class='item' wx:for='{{school_list}}' wx:key="unique"  >
+      <view class='item-left'  data-id='{{item.id}}'>
+        <image mode='scaleToFill' wtyle='width:100%;height:100%;' src='{{item.thumb}}'></image>
+      </view>
+      <view class='iten-middle'  data-id='{{item.id}}'>
+        <text>{{item.name}}</text>
+        <view class='item-middle-view'>
+          <image src='/images/campus_location.png'></image>
+          <text decode='true'>{{item.address}}</text>
+        </view>
+      </view>
+
+      <view  class='item-right' bindtap='modal_point'>
+        <image src='../../images/phone-call.png'></image>
+      </view>
+      <modal class='hide' hidden="{{hiddenmodalput}}" confirm-text="拨打" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+      <text>18652445565</text>
+      </modal>  
+
+    </view>
+
+    
+  </view>
+
+</view>

@@ -1,0 +1,31 @@
+<!--pages/discount_ticket/discount_tickrt.wxml-->
+  <view class='list'>
+    <view class='item' wx:for="{{array}}" wx:key="unique"> 
+
+      <view class='item-image'>
+          <image src='{{item.url}}'></image>
+      </view>
+
+      <view class='item-ticket'>
+          <text>{{item.name}}</text>
+          <text>{{item.price}}</text>
+          <text>{{item.condition}}</text>
+      </view>
+
+    <!--圆  -->
+    <view class='wrap-top'>
+      <view class='circle'></view>
+    </view>
+
+    <view class='border'></view>
+
+    <view class='wrap-bottom'>
+      <view class='circle'></view>
+    </view>
+<!--立即领取  -->
+      <view class='item-click' bindtap='receive'>
+          <text>{{item.receive}}</text>
+      </view> 
+
+    </view>
+  </view>

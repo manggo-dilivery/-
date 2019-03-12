@@ -1,0 +1,18 @@
+<!--pages/headline/headline.wxml-->
+<!--pages/teacher_detail/teacher_detail.wxml-->
+<view class='container'>
+
+  <view class='title'>
+    <text>白旺旺（主讲思想品德）</text>
+    <text decode='true'>2018-03-21</text>
+  </view>
+
+  <view class='detail'>
+    <text>白旺旺：主讲思想品德</text>
+    <text>毕业院校：清华大学</text>
+    <text>个人简介：从事教育行业9年多，主要从事学前、小学以及初中的思想品德教学，熟知学前、小学以及初中的思想品德类教材。辅导的孩子曾获得“全国少儿思想品德风采大赛”一、二、三等奖。获得希望之星大赛一等奖、二等奖、最佳语音奖，最具学识奖等奖项</text>
+  </view>
+
+  
+</view>
+

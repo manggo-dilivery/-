@@ -1,0 +1,47 @@
+/* pages/column/column.wxss */
+page{
+  background: #eee;
+}
+text{
+  font-size: 30rpx;
+  color:#555;
+}
+.container{
+  width:100%;
+  height:auto;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:120rpx;
+  background: #fff;
+  border-top:1rpx solid #eee;
+}
+.item-left{
+  display: flex;
+  align-items: center;
+}
+.item-left image{
+  width:100rpx;
+  height:100rpx;
+  margin-left:30rpx;
+}
+.item-left text{
+  margin-left:20rpx;
+  width:400rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.item-right{
+  display: flex;
+  align-items: center;
+
+}
+.item-right text{
+  margin-right:25rpx;
+  font-size: 25rpx;
+  color:#888;
+}

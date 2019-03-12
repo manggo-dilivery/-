@@ -1,0 +1,97 @@
+
+/*教师列表  */
+.top{
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #fff;
+  padding-bottom:50rpx; 
+}
+.item{
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  margin-top:30rpx;
+  padding: 30rpx 0;
+  border:1rpx solid #ddd;
+  border-radius:10rpx;
+  box-shadow: 0 0 10rpx #ddd;
+  position: relative;
+}
+.item image{
+  width:130rpx;
+  height:130rpx;
+  margin-left:30rpx;
+} 
+.item text{
+  font-size:28rpx;
+  margin-top:10rpx;
+}
+.iten-middle{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:30rpx;
+}
+.iten-middle text:first-child{
+  font-size:32rpx;
+  color:#666;
+  font-weight: bold;
+}
+.iten-middle text:last-child{
+  font-size:30rpx;
+  color:#777;
+
+  padding:3rpx 10rpx;
+  margin-bottom:10rpx;
+}
+.item-right{
+  width:170rpx;
+  height:65rpx;
+  background: #2dd8ac;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10rpx;
+  position: absolute;
+  top:50%;
+  margin-top:-60rpx;
+  right:20rpx;
+}
+.item-right image{
+  width:45rpx;
+  height:45rpx;
+  margin-left:0;
+}
+/*增加地理位置样式 */
+.item-middle-view{
+display: flex;
+align-items: center;
+position: relative;
+}
+.item-middle-view image{
+width:35rpx;
+height:35rpx;
+margin-left:0;
+position: absolute;
+}
+.item-middle-view text{
+border-radius:7rpx;
+padding:3rpx 10rpx;
+margin-bottom:10rpx;
+display: -webkit-box;
+font-size:28rpx;
+color:#777;
+line-height:32rpx;
+word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp:1;
+overflow: hidden;
+text-overflow:ellipsis;
+margin-left:25rpx;
+}

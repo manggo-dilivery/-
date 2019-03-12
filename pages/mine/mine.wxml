@@ -1,0 +1,54 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+
+    <view class='top'>
+      <view class='top-image'>
+        <image src='../../images/pesonal_bg.png'></image>
+      </view>
+    </view>
+
+<!--旺旺头像  -->
+
+    <view class='top-detail'>
+      <image class='portrait' src='{{userinfo.avatarUrl}}'></image>
+      <text>{{userinfo.nickName}}</text>
+      <!-- <image class='icon' src='../../images/arrow.png'></image> -->
+    </view>
+
+    <view class='list'>
+
+      <view class='item'>
+        <view class='item-text' bindtap='order'>
+          <image src='../../images/list.png'></image>
+          <text>我的预约</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../images/arrow.png'></image>
+        </view>
+      </view>
+
+      <view class='item'>
+        <view class='item-text' bindtap='receive_ticket'>
+          <image src='../../images/ticket.png'></image>
+          <text>我的优惠券</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../images/arrow.png'></image>
+        </view>
+      </view>
+        <view class='item'>
+        <view class='item-text' bindtap='clockin'>
+          <image src='../../images/mine-list.png'></image>
+          <text>打卡记录</text>
+        </view>
+        <view class='item-icon'>
+          <image src='../../images/arrow.png'></image>
+        </view>
+  
+      </view>
+
+      
+
+    </view>
+
+</view>

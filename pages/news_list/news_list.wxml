@@ -1,0 +1,20 @@
+<block wx:for='{{article}}' wx:key='unique'>
+    <view class='list' bindtap='column_detail' data-id="{{item.id}}">
+      <view class='item'>
+      <view class='item-left'>
+        <view class='item-left-1'>
+          <text>{{item.title}}</text>
+           <text>{{item.createtime}}</text>
+        </view>
+         <!-- <view class='item-left-2'>
+          <text>小柔妈</text>
+          <text>1万+浏览</text>
+          <text>111赞</text>
+        </view>  -->
+      </view>
+      <view class='item-right'>
+         <image src='{{item.thumb}}'></image> 
+      </view>
+      </view>
+    </view>
+  </block>

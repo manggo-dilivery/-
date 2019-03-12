@@ -1,0 +1,49 @@
+/*家庭教育和近期活动专栏 */
+.list{
+  background: #fff;
+  width:100%;
+  height:auto;
+  display: flex;
+  align-items: center;
+  border-bottom:1rpx solid #ddd;
+}
+.item{
+  width:95%;
+  height:auto;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0 10rpx 0;
+}
+.item-left{
+  width:530rpx;
+  height:190rpx;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: space-between; */
+}
+.item-left-1{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.item-left-1 text{
+  font-size:30rpx;
+  font-weight:bold;
+  color:#777;
+}
+.item-left-1 text:last-child{
+  font-weight: normal;
+  color:#777
+}
+.item-left-2 text{
+  font-size:25rpx;
+  color:#999;
+  margin-left:20rpx;
+}
+.item-right image{
+  width:180rpx;
+  height:160rpx;
+  margin-left:10rpx;
+}

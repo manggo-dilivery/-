@@ -1,0 +1,12 @@
+<!--pages/column/column.wxml-->
+<view class='container'>
+  <view class='list' wx:for="{{array}}" wx:key='unique' bindtap='column_detail' data-id="{{item.id}}">
+    <view class='item-left'>
+      <image src='{{item.url}}'></image>
+      <text>{{item.title}}</text>
+    </view>
+    <view class='item-right'>
+      <text>{{item.date}}</text>
+    </view>
+  </view> 
+</view>

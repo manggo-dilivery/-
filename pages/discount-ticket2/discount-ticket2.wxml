@@ -1,0 +1,26 @@
+<!--pages/discount-ticket2/discount-ticket2.wxml-->
+<view class='container'>
+  
+  <block wx:for='{{coupon}}' wx:key="unique">
+  
+    <view class='list'>
+      <view class='item1' >
+        <text>￥</text>
+        <text>{{item.price}}</text> 
+      </view>
+      <view class='item2'> 
+        <text>{{item.name}}</text>
+        <view class='border'></view>
+        <text>{{item.condition}}</text>
+        <text>{{item.valid_begin}}-{{item.valid_end}}</text>
+      </view>
+      <image class='box-border' src='../../images/box-border.jpg'></image>
+      <view class='item3'>
+        <text bindtap='get_coupon' data-id="{{item.id}}">点击领取</text>
+      </view>
+    </view>
+    <view class='box-shadow'><image src='../../images/box-shadow.png'></image></view>
+
+  </block>
+
+</view>

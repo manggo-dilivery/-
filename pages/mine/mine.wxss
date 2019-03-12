@@ -1,0 +1,89 @@
+/* pages/mine/mine.wxss */
+page{
+  background: #eee;
+}
+
+/*顶部图片  */
+
+.top{
+  width:100%;
+  height:400rpx;
+  position:realative;
+  background: #2dd8ac;
+}
+.top-image{
+  width:100%;
+  height:60rpx;
+  position: absolute;
+  top:340rpx;
+}
+.top-image image{
+  width:100%;
+  height:60rpx;
+}
+
+.top-detail{
+  width:100%;
+  height:250rpx;
+  position: absolute;
+  top:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:50rpx;
+}
+.top-detail text{
+  font-size:34rpx;
+  /* margin-left:30rpx; */
+  margin-top:20rpx;
+  color:#fff;
+}
+.portrait{
+  width:150rpx;
+  height:150rpx;
+  border-radius:75rpx;
+  box-shadow:0 0 0 8rpx #68e1c2;
+}
+.icon{
+  width:60rpx;
+  height:60rpx;
+  margin-left:350rpx;
+}
+/*列表  */
+
+.list{
+  width:100%;
+  height:auto;
+  background: #fff;
+}
+.item{
+  width:100%;
+  height:90rpx;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eee;
+}
+.item-text{
+  width:100%;
+  height:90rpx;
+  display: flex;
+  align-items: center;
+}
+.item-text image{
+  width:40rpx;
+  height:40rpx;
+  margin-left:30rpx;
+}
+.item-text text{
+  font-size:30rpx;
+  margin-left:20rpx;
+}
+
+.item-icon image{
+  width:20rpx;
+  height:20rpx;
+  margin-right:30rpx;
+}

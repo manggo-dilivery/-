@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class='top'>
+<!--轮播  -->
+  <swiper circular='true' indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{slide_thumbs}}" wx:key="{{key}}">
+      <swiper-item>
+        <image src="{{item}}" mode='scalToFill' class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper> 
+
+  <!-- <view class='annouce' bindtap='headline' data-id='38'>
+    <view class='view-left'>
+      <text>小鸟头条</text>
+      <image src='../../images/annouce.png'></image>
+    </view>
+    <view class='view-right'>
+      <text>幼儿园手工很难？这份攻略帮你轻松搞定！</text>
+    </view>
+  </view> -->
+
+  <view class='nav-top'>
+
+    <view class='nav-detail' bindtap='nav1'>
+      <image class="green" src='../../images/school.png'></image>
+      <text>学校简介</text>
+    </view>
+
+    <view class='nav-detail' bindtap='schedule'>
+      <image class='yellow' src='../../images/class.png'></image>
+      <text>课程介绍</text>
+    </view>
+
+    <view class='nav-detail' bindtap='clockin'>
+      <image class='blue' src='../../images/flower_02.png'></image>
+      <text>签到</text>
+    </view>
+     <view class='nav-detail' bindtap='news_list'>
+      <image class='blue' src='../../images/news_nav.png'></image>
+      <text>动态</text>
+    </view>
+    <!-- <view class='nav-detail' bindtap='recipe'>
+      <image class='pink' src='../../images/sey-people-a.png'></image>
+      <text>食谱</text>
+    </view> -->
+ 
+  </view>
+
+  <view class='horn'>
+    <image src='../../images/horn.png'></image>
+    <text>这里有最新的课程优惠券！赶紧来领吧！</text>
+    <text bindtap='discount_ticket2'>领取优惠券</text>
+  </view>
+
+</view>
+
+<!-- <block wx:for="{{article}}"> -->
+  <block wx:for='{{article}}' wx:key='unique'>
+    <view class='list' bindtap='column_detail' data-id="{{item.id}}">
+      <view class='item'>
+      <view class='item-left'>
+        <view class='item-left-1'>
+          <text>{{item.title}}</text>
+          <text>{{item.createtime}}</text>
+        </view>
+        <!-- <view class='item-left-2'>
+          <text>小柔妈</text>
+          <text>1万+浏览</text>
+          <text>111赞</text>
+        </view> -->
+      </view>
+      <view class='item-right'>
+         <image src='{{item.thumb}}'></image> 
+      </view>
+      </view>
+    </view>
+  </block>
+<!-- </block> -->
+
+

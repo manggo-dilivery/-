@@ -1,0 +1,86 @@
+<!--pages/class-category/class-category.wxml-->
+<view class='indent'></view>
+<view class='container'>
+  <view class='top-tab'>
+    <block wx:for="{{tabs}}" wx:key="id">
+      <view class="tabs-item  {{currentTabsIndex == index?'selected':''}}" bindtap='onTabChange' data-index='{{index}}'>
+       {{item}}
+      </view>
+    </block> 
+  </view>
+  
+  <view class='class-category-list' hidden='{{currentTabsIndex != 1}}'>
+     <block wx:for='{{list1}}' wx:key='unique'> 
+        <view class='item' bindtap='appointment' data-id='{{item.id}}'>
+          <view class='item-left'>
+            <image src='{{item.thumbnailsmall}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+     </block> 
+  </view>
+
+  <view class='class-category-list' hidden='{{currentTabsIndex != 0}}'>
+     <block wx:for='{{list1}}' wx:key='unique'> 
+        <view class='item' bindtap='appointment' data-id='{{item.id}}'>
+          <view class='item-left'>
+            <image mode='widthFix' src='{{item.thumbnailsmall}}'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+     </block> 
+  </view>
+
+  
+
+  <!-- <view hidden='{{currentTabsIndex != 0}}'>
+    <block wx:for='{{breakfast}}' wx:key='unique'>
+      <view class='list-breakfast'>
+        <view class='item'>
+          <view class='item-left'>
+            <image src='{{item.thumb}}'></image>
+          </view>
+          <view class='item-right'>
+            <text>{{item.name}}</text>
+            <text>{{item.description}}</text> 
+           
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view hidden='{{currentTabsIndex != 1}}'>
+    <block wx:for='{{lunch}}' wx:key='unique'>
+      <view class='list-breakfast'>
+        <view class='item'>
+          <view class='item-left'>
+            <image src='{{item.thumb}}'></image>
+          </view>
+          <view class='item-right'>
+            <text>{{item.name}}</text>
+            <text>{{item.description}}</text> 
+           
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view hidden='{{currentTabsIndex != 2}}'>
+    <block wx:for='{{dinner}}' wx:key='unique'> 
+      <view class='list-breakfast'>
+        <view class='item'>
+          <view class='item-left'>
+            <image src='{{item.thumb}}'></image>
+          </view>
+          <view class='item-right'>
+            <text>{{item.name}}</text>
+            <text>{{item.description}}</text> 
+          </view>
+        </view>
+      </view>
+    </block>
+  </view> -->
+
+</view>

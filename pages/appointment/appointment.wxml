@@ -1,0 +1,57 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view class='top'>
+  <!-- <image src='{{course.thumb}}' bindtap="preview_image"></image> -->
+   <image mode='widthFixmpad' src='{{course.thumb}}' bindtap="preview_image"></image>
+  <text>{{course.name}}</text>
+</view>
+
+<!--中部价格  -->
+
+<view class='middle'>
+  <view class='middle-detail'> 
+    <text>￥</text>
+    <text>{{course.price}}</text>
+  </view>
+  <view class='immediate'>
+    
+  </view>
+</view>
+<!--详细信息  -->
+<view class='details' style="width:100%;padding-bottom:120rpx;">
+  <view style="width:95%;margin:0 auto;line-height:26px;mpad">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  
+  <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/> -->
+  <!-- <view class='details-title'>
+    <text>中加助学</text>
+    <image src='../../images/arrow.png'></image>
+  </view>
+  <view class='border'></view>
+  <view class='details-content'> 
+    <image src='../../images/location.png'></image>
+    <text>北京市温州区，中加学校校区。临河里校区</text>
+  </view> -->
+</view>
+
+  <!-- <view class='image'>
+    <image src='../../images/discount.png'></image>
+  </view> -->
+
+
+<view class='bottom'>
+  <view bindtap='modal_point'>
+    <image src='../../images/phone.png'></image>
+    <text>电话</text>
+  </view>
+  <modal class='hide' hidden="{{hiddenmodalput}}" confirm-text="拨打" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <text>18652445565</text>
+  </modal> 
+  <view>
+    <button class='bottom_btn' open-type='share'><image src='../../images/share.png'></image>分享</button>
+  </view>
+  <view bindtap='sign_up'>
+    <button>预约试听</button>
+  </view>
+
+</view>

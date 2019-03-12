@@ -1,0 +1,36 @@
+<!--pages/clockin/clockin.wxml-->
+<view class='container'>
+  <view class='top'>
+    <view class='top-image'>
+      <image src='{{userinfo.avatarUrl}}'></image>
+      <view class='top-text'>
+        <text>{{userinfo.nickName}}</text>
+        <view>
+          <image src='../../images/coin.png'></image>
+          <text>{{sign_data.sign_total_score}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='top-card'>
+      <text>已打卡{{sign_data.sign_total_day}}天</text>
+    </view>
+  </view>
+  <view class='middle'>
+    <view class='middle-card' bindtap='gowork'>
+      <text>{{sign_msg}}</text>
+    </view>
+  </view>
+
+  <view class='detail'>
+    <text>打卡明细</text>
+  </view>
+
+  <view class='list' wx:for="{{sign_data.sign_list}}" wx:key="{{key}}">
+    <text>{{item.createtime}}</text> 
+   
+    <text>打卡成功，赚取</text>
+    <text>{{item.score}}</text>
+    <text>个积分</text>
+  </view>
+
+</view>
